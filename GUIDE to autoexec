@@ -1,0 +1,59 @@
+AUTOEXEC:
+
+// What is an Autoexec?
+An autoexec.cfg is quite literally an automatically executed config. A text file generated (or saved) by the user, that tells the game
+which specificsettings the user would like to use while they play. 
+Autoexec.cfg's (often referred to as configs, .cfg, fps configs, scripts, etc.) live in your \cfg\ directory for CSGO on your local machine.
+It mary vary a bit per user, but generally speaking you'll want to place your
+.cfg into:
+
+-> C:\Program Files (x86)\Steam\SteamApps\common\Counter-Strike Global Offensive\csgo\cfg 
+
+An autoexec, automatically executes a config file that can alter your game experience.
+For some players this means simply showing the net_graph that displays client/server connections as well as frames per second.
+How many times in-game has someone asked you "how do you show your FPS?". The fast answer is net_graph, but the longer answer
+is to have your .cfg file handle it. Moving on, take a look at a few of the available options for changing your individual
+in-game experience.
+--------------------------------------------------------------------
+
+// useful Tipps for Autoexec user:
+->  .cfg files in CSGo actually got a maximum filezize to 6000 bytesm all .cfg files above wont execute at all!!
+->  You can hardcode the .cfg with "host_writeconfig" but you will overwrite your Deufault cfg than!!!
+
+// How to manage multiple .cfg loads on CSGo startup:
+-> create a own .cfg for all tweaks you do for example: fps.cfg, video.cfg, bindings.cfg, sound.cfg .... and so far
+-> create a blank autoexec.cfg and add the execute command for each .cfg u wanna load.
+
+  ##############################################
+## autoexec.cfg example for multi .cfg loads: ##
+##                                            ##    If you start CSGO it execute your autoexec.cfg cause u added "+exec autoexec"
+## clear                                      ##    to your launchoptions. in this cfg u tell CSGO to execute all other configs
+## exec fps.cfg                               ##    without adding them all without "+exec bla.cfg" "+exec bla2.cfg" and so far!
+## exec video.cfg                             ##    
+## exec bindings.cfg                          ##    The echo is a smart way to get an simple text-output to your console after launch
+## exec ...                                   ##    if u added "- console" to launchoptions the console pops-up instand after starting.
+##                                            ##    So if you see your text "configs loaded" in the console u now it worked!
+##                                            ##
+## echo " "                                   ##    For some bug fixing u can also add an echo line in each cfg so you see if any csf not
+## echo "configs loaded"                      ##    loaded sucessfully!
+## echo " "                                   ##
+ ############################################
+--------------------------------------------------------------------
+
+// find the command you can use into a .cfg file:
+
+Valve developer comand listing:
+https://developer.valvesoftware.com/wiki/Console_Command_List
+
+Dathost Listing (server + Client ((you use client for your player cfg and server for train local with bots)):
+http://tools.dathost.net/csgo-commands
+
+CSGGONOOb Console Command list:
+https://csgonoob.net/csgo-console-commands/
+
+Autoexec generator:
+https://autoexec.global-offensive.com/
+
+Essential scipting examples & bindings on reddit:
+https://www.reddit.com/r/GlobalOffensive/comments/1w0fod/what_are_your_must_have_or_essential/
+
