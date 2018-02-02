@@ -1,4 +1,6 @@
 
+LAUNCHOPTIONS:
+
 // How to use:
 
 Open Steam -> right Mouseclick on CSGO -> General -> Launchoptions
@@ -98,5 +100,7 @@ Use Trilinear Mode (where # is 2, 4, 8, or 16 – higher levels of filtering req
 
 +mat_hdr_level #
 Adjusts High Dynamic Range lighting effects where # is 0 for “off” (requires least resources) and 2 for “full”
+--------------------------------------------------------------------
+
 
 
