@@ -1,0 +1,102 @@
+
+// How to use:
+
+Open Steam -> right Mouseclick on CSGO -> General -> Launchoptions
+copy & paste the options of your choiche and  confirm with "ok"
+--------------------------------------------------------------------
+
+
+// My personal settings:
+
+-silent -novid -nojoy -nod3d9ex -noforcemparms -noforcemacel -refresh 75 -freq 75 +mat_queue_mode 2 -noaafonts -Heapsize 8388608 -language bananagaming -threads 8 -console +exec autoexec +cl_forcepreload 1
+--------------------------------------------------------------------
+
+
+// useful Commands with Explanations:
+
+-dxlevel <level>
+Use a specific DirectX version when launching the game. This could significantly enhance your graphic & game performance if your hardware is older.
+
+-fullscreen
+Start CS:GO in fullscreen mode.
+
+-console
+The developer’s console, which is used primarily for user interface customization and key binds, opens immediately upon launch.
+
+-windowed
+If you want to play in windowed mode, use this option.
+
+-h <height> & -w <weight>
+Forces the engine to start with resolution set to <height>
+This launch option does not need to be set in the presence of -w. The width value will determine the height automatically.
+
+-refresh <rate> (or -freq <rate>)
+This option allows you to use a higher refresh rate for better game experience. However this can only be applied if your monitor supports higher rates, such as 144 Hz, or 75 Hz. You can put -refresh 144
+or -freq 144 parameter in the launch options and use mat_info console command to check if it works. Default is 60 Hz.
+
+-heapsize <kilobytes>
+Specifies the heapsize (in kilobytes) which the game will use
+
+-threads <number of cores/threads>
+So far, I was not able to find a definitive information about the maximum number of threads that CS:GO uses and if this launchoption makes any sense. If you have a CPU with 4 or more cores, you can try
+to set -threads to the number of cores (or number of threads if you own a CPU with 2 threads/core) you have, but right now I can not guarantee that your performance will improve. Test it, if you don’t notice any difference or your performance is actually worse, remove the launchoption again.
+
+-novid
+This option will save you time. When loading a game with this parameter, the intro Valve video will not play.
+
+-noborder
+Using this launch option will remove the border that Windows puts around the window when the game is run in windowed mode.
+
++cl_forcepreload 1
+increase FPS by preloading maps (not necessarily faster, that depends on your PC)
+
+-noaafont
+Use basic fonts in game, the option can somehow boost your fps a little bit.
+
+-nojoy
+removes joystick support andincreases fps in some cases
+
+-tickrate <number>
+Sets the tickrate you want to play with. The higher the better. This can be 64 (Steam servers) or 128 (dedicated servers). You can just set it to 128 since the game will automatically adjust the rate if you connect to a 64 server.
+
++exec autoexec
+Automatically execs your custom config if you have one
+
+-noforcemaccel
+-noforcemparms
+-noforcemspd
+Oldschool CS 1.6 players will remember these launch options. However, they are not applicable in CS:GO. Instead, use the command m_rawinput 1 to make your mouse movement dependant on your mouse settings as mice today can be configured to have none acceleration outside CS:GO (e.g. in a mouse driver).
+
++r_rootlod #
+Adjusts Model Detail where # is 0 for high, 1 is medium, and 2 for low
+
++mat_picmip #
+Adjusts Texture Detail where # is 0 for high, 1 is medium, and 2 for low
+
++mat_reducefillrate #
+Adjusts Shader Detail where # is 0 for high and 1 for low
+
++r_waterforceexpensive #
+Adjusts Water Detail where # is 0 for low and 1 for high
+
++r_waterforcereflectentities #
+Adjusts Water Reflectiveness where # is 0 for low and 1 for high
+
++r_shadowrendertotexture # – Adjusts Shadow Detail where # is 0 for low and 1 for high
+
++mat_colorcorrection #
+Adjusts Color Correction where # is 0 for low and 1 for high
+
++mat_trilinear 0
+Use Bilinear Mode (least system-intensive)
+
++mat_trilinear 1 
+Use Trilinear Mode (more system-intensive)
+
++mat_forceaniso #
+Use Trilinear Mode (where # is 2, 4, 8, or 16 – higher levels of filtering require more system resources)
+
++mat_hdr_level #
+Adjusts High Dynamic Range lighting effects where # is 0 for “off” (requires least resources) and 2 for “full”
+
+
